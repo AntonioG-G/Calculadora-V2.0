@@ -38,10 +38,8 @@ footer {
 textarea {
   resize: none;
   border: 1px orange solid;
-  height: 62%;
+  height: 88%;
   width: 94%;
-  text-align: right;
-  padding-top: 5%;
 }
 
 button {
@@ -127,16 +125,9 @@ button {
 }
 
 #button17 {
-  grid-area: 5/1/6/2;
+  grid-area: 5/1/6/3;
 }
 
 #button18 {
-  grid-area: 5/2/6/3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#button19 {
   grid-area: 5/3/6/5;
 }/*# sourceMappingURL=style.css.map */
