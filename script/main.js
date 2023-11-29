@@ -5,7 +5,7 @@ const readNumbers = value => result.value += value;
 const calculate = () => {
     try {
         result.value = eval(result.value);
-        if (result.value == "Infinity") {
+        if (result.value == "Infinity" || result.value == "undefined") {
             displayError();
         }
     } catch (error) {
@@ -31,5 +31,5 @@ const copyResult = () => navigator.clipboard.writeText(result.value);
 
 const displayError = () => {
     result.value = "ERROR";
-    setTimeout(clean, 3000);
+    setTimeout(clean, 1400);
 }
