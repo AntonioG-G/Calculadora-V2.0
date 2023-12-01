@@ -5,7 +5,7 @@ body {
 }
 
 main {
-  height: 88vh;
+  height: 85vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@ footer {
 }
 
 .mainContainer {
-  height: 60vh;
+  height: 62vh;
   width: 22vw;
   display: flex;
   flex-direction: column;
@@ -29,24 +29,34 @@ footer {
 }
 
 #result {
-  height: 20%;
+  height: 28%;
   background-color: #252525;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 textarea {
   resize: none;
-  border: 0px orange solid;
-  height: 54%;
   width: 90%;
   text-align: right;
-  padding-top: 7%;
-  padding-right: 3.4%;
   background: #FAFAFA;
-  font-size: 150%;
   font-weight: bold;
+}
+
+#historialText {
+  height: 18%;
+  font-size: 105%;
+  padding-top: 1%;
+}
+
+#resultText {
+  color: rgb(5, 5, 5);
+  height: 30%;
+  font-size: 160%;
+  padding-top: 5%;
+  border-top: 2px solid #080808;
 }
 
 button {
@@ -109,7 +119,7 @@ button {
 }
 
 #buttons {
-  height: 80%;
+  height: 77%;
   background-color: #252525;
   display: grid;
   grid-template-columns: repeat(5, 1fr);

@@ -1,11 +1,13 @@
 const result = document.getElementById("resultText");
+const historial = document.getElementById("historialText");
 
 const readNumbers = value => result.value += value;
 
 const calculate = () => {
+    historial.value = result.value
     try {
         result.value = eval(result.value);
-        if (result.value == "Infinity" || result.value == "undefined") {
+        if (isNaN(result.value) || result.value == Infinity || result.value == undefined) {
             displayError();
         }
     } catch (error) {
@@ -13,11 +15,24 @@ const calculate = () => {
     }
 }
 
-const pow2 = () => result.value = Math.pow(result.value, 2);
+const pow2 = () =>{
+    result.value = Math.pow(result.value, 2);
+    if (isNaN(result.value)) {
+        displayError();
+    }
+}
 
-const squareRoot = () => result.value = Math.sqrt(result.value);
+const squareRoot = () => {
+    result.value = Math.sqrt(result.value);
+    if (isNaN(result.value)) {
+        displayError();
+    }
+}
 
-const clean = () => result.value = "";
+const clean = () => {
+    result.value = "";
+    historial.value = "";
+}
 
 const change = () => {
     if (result.value !== "") {
