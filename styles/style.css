@@ -5,16 +5,10 @@ body {
 }
 
 main {
-  height: 85vh;
-  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-footer {
-  height: 10vh;
 }
 
 .mainContainer {
@@ -22,15 +16,14 @@ footer {
   width: 22vw;
   display: flex;
   flex-direction: column;
-  background-color: #FAFAFA;
+  background: rgb(37, 37, 37);
   border: 3px solid #252525;
-  margin: 1.5%;
-  border-radius: 11px;
+  margin: 5%;
 }
 
 #result {
   height: 28%;
-  background-color: #252525;
+  background-color: #F0F0F0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +34,6 @@ textarea {
   resize: none;
   width: 90%;
   text-align: right;
-  background: #FAFAFA;
   font-weight: bold;
 }
 
@@ -49,6 +41,10 @@ textarea {
   height: 18%;
   font-size: 105%;
   padding-top: 1%;
+  padding-right: 4%;
+  border-radius: 7px;
+  border-color: #080808;
+  border-width: 0px 0px 1px 0px;
 }
 
 #resultText {
@@ -56,7 +52,10 @@ textarea {
   height: 30%;
   font-size: 160%;
   padding-top: 5%;
-  border-top: 2px solid #080808;
+  padding-right: 4%;
+  border-radius: 7px;
+  border-width: 0px 0px 1px 0px;
+  border-color: #080808;
 }
 
 button {
@@ -74,12 +73,12 @@ button {
 }
 
 .number3DButton {
-  background: #FFFF47;
-  box-shadow: 4px 4px #BBBB00;
+  background: #ED835C;
+  box-shadow: 4px 4px #B86548;
 }
 
 .number3DButton:hover {
-  box-shadow: 2px 2px #BBBB00;
+  box-shadow: 2px 2px #B86548;
   top: 2.5px;
 }
 
@@ -120,7 +119,8 @@ button {
 
 #buttons {
   height: 77%;
-  background-color: #252525;
+  /* background-color: #252525 */
+  box-shadow: 0px 2px 30px 5px rgba(240, 240, 240, 0.5);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
