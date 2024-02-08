@@ -12,8 +12,8 @@ main {
 }
 
 .mainContainer {
-  height: 62vh;
-  width: 22vw;
+  height: 74vh;
+  width: 25vw;
   display: flex;
   flex-direction: column;
   background: rgb(37, 37, 37);
@@ -226,4 +226,24 @@ button {
 
 #button24 {
   grid-area: 5/4/6/6;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .mainContainer {
+    width: 42vw;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainContainer {
+    width: 55vw;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  main {
+    align-items: flex-start;
+  }
+  .mainContainer {
+    width: 85vw;
+    height: 85vh;
+  }
 }/*# sourceMappingURL=style.css.map */
